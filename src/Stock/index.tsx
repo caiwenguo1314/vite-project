@@ -1,4 +1,4 @@
-import { Button, Grid, Pagination, Table, ConfigProvider } from "antd";
+import { Button, Grid, Table } from "antd";
 import { useEffect, useState } from "react";
 import "./index.css";
 
@@ -9,9 +9,6 @@ const Stock = () => {
   const isMobile = !screens.md;
   const [stockPrice, setStockPrice] = useState([]);
   const [loading, setLoading] = useState(false);
-
-  const [current, setCurrent] = useState(1);
-  const pageSize = 5;
 
   const symbols = ["AAPL", "BRK B", "FFAI", "GME", "NIO", "TSLA"];
   const encodedSymbols = symbols.join(",");

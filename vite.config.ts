@@ -7,4 +7,12 @@ export default defineConfig({
     open: true, // 自动打开浏览器
   },
   base: "/", // 修改为根路径，适配Cloudflare部署
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html'
+      }
+    }
+  },
+  publicDir: 'public'
 });
