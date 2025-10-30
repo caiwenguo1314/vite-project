@@ -6,5 +6,5 @@ export default defineConfig({
   server: {
     open: true, // 自动打开浏览器
   },
-  base: "/vite-project/",
+  base: "/", // 修改为根路径，适配Cloudflare部署
 });
